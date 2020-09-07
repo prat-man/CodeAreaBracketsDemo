@@ -1,0 +1,10 @@
+.code-area .paragraph-box .text {
+    -fx-font-size: 18px;
+}
+.code-area .paragraph-box .text.loop {
+	-fx-fill: #E45FB8;
+	-fx-font-weight: bold;
+}
+.code-area .paragraph-box .text.loop.match {
+    -rtfx-background-color: #00000033;
+}
