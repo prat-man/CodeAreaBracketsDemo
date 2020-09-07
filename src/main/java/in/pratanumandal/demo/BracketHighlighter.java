@@ -91,6 +91,9 @@ public class BracketHighlighter {
                     List<String> styleList = new ArrayList<>();
                     styleList.add("loop");
                     styleList.add("match");
+
+                    // if we run the following line with Platform.runLater, selection works
+                    // but bracket highlighting breaks down
                     codeArea.setStyle(pair.start, pair.start + 1, styleList);
                 }
             }
@@ -102,6 +105,9 @@ public class BracketHighlighter {
                     List<String> styleList = new ArrayList<>();
                     styleList.add("loop");
                     styleList.add("match");
+
+                    // if we run the following line with Platform.runLater, selection works
+                    // but bracket highlighting breaks down
                     codeArea.setStyle(pair.end, pair.end + 1, styleList);
                 }
             }
@@ -135,6 +141,9 @@ public class BracketHighlighter {
                 if (text.equals("[") || text.equals("]")) {
                     List<String> styleList = new ArrayList<>();
                     styleList.add("loop");
+
+                    // if we run the following line with Platform.runLater, selection works
+                    // but bracket highlighting breaks down
                     codeArea.setStyle(pair.start, pair.start + 1, styleList);
                 }
             }
@@ -145,6 +154,9 @@ public class BracketHighlighter {
                 if (text.equals("[") || text.equals("]")) {
                     List<String> styleList = new ArrayList<>();
                     styleList.add("loop");
+
+                    // if we run the following line with Platform.runLater, selection works
+                    // but bracket highlighting breaks down
                     codeArea.setStyle(pair.end, pair.end + 1, styleList);
                 }
             }
